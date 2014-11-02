@@ -1,0 +1,441 @@
+/* Created by Artisteer v4.1.0.59861 */
+
+.responsive body
+{
+   min-width: 240px;
+}
+  
+.responsive .MIT-content-layout img,
+.responsive .MIT-content-layout video
+{
+   max-width: 100%;
+   height: auto !important;
+}
+
+.responsive.responsive-phone .MIT-content-layout img 
+{
+   float: none !important;
+}
+    
+.responsive .MIT-content-layout .MIT-sidebar0, 
+.responsive .MIT-content-layout .MIT-sidebar1, 
+.responsive .MIT-content-layout .MIT-sidebar2 
+{
+   width: auto !important;
+}
+    
+.responsive .MIT-content-layout, 
+.responsive .MIT-content-layout-row, 
+.responsive .MIT-layout-cell 
+{
+   display: block;
+}
+    
+.responsive .image-caption-wrapper 
+{
+   width: auto;
+}
+
+.responsive.responsive-tablet .MIT-vmenublock,
+.responsive.responsive-tablet .MIT-block
+{
+   margin-left: 1%;
+   margin-right: 1%;
+   width: 48%;
+   float: left;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+.responsive .MIT-responsive-embed 
+{
+   position: relative;
+   padding-bottom: 56.25%;
+   /* 16:9 */
+	height: 0;
+}
+
+.responsive .MIT-responsive-embed iframe,
+.responsive .MIT-responsive-embed object,
+.responsive .MIT-responsive-embed embed
+{
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+
+.responsive .MIT-sheet
+{
+   width: auto !important;
+   min-width: 240px !important;
+   max-width: none;
+   margin-right: 1% !important;
+   margin-left: 1% !important;
+}
+
+#MIT-resp {
+   display: none;
+}
+
+@media all and (max-width: 768px)
+{
+    #MIT-resp, #MIT-resp-t { display: block; }
+    #MIT-resp-m { display: none; }
+}
+
+@media all and (max-width: 480px)
+{
+    #MIT-resp, #MIT-resp-m { display: block; }
+    #MIT-resp-t { display: none; }
+}
+
+.responsive .MIT-header 
+{
+   width: auto;
+   height: auto;
+   min-height: 100px;
+   min-width: 1%;
+   background-position: center center !important;
+   background-size: cover !important;
+   background-repeat: repeat !important;
+}
+
+.responsive .MIT-header .MIT-headline, 
+.responsive .MIT-header .MIT-slogan 
+{
+   display: block !important;
+   top: 0 !important;
+   left: 0 !important;
+   margin: 2% !important;
+}
+    
+.responsive .MIT-header .MIT-headline a, 
+.responsive .MIT-header .MIT-slogan 
+{
+   white-space: normal !important;
+}
+  
+.responsive .MIT-header *
+{
+   position: relative;
+   text-align: center;
+   -webkit-transform: none !important;
+   -moz-transform: none !important;
+   -o-transform: none !important;
+   -ms-transform: none !important;
+   transform: none !important;
+}
+
+.responsive .MIT-header #MIT-flash-area,
+.responsive .MIT-header .MIT-shapes>*
+{
+   display: none;
+}
+
+.responsive #MIT-header-bg 
+{
+   background-position: center center !important;
+   background-size: cover !important;
+   background-repeat: repeat !important;
+}
+
+/* Search and other elements in header element directly */
+.responsive .MIT-header>.MIT-textblock
+{
+   position: relative !important;
+   display: block !important;
+   margin: 1% auto !important;
+   width: 75% !important;
+   top: auto !important;
+   right: auto !important;
+   bottom: auto !important;
+   left: auto !important;
+}
+
+/* For icons like facebook, rss, etc. */
+.responsive .MIT-header>.MIT-textblock>div 
+{
+   width: 100%;
+}
+/* dynamic width nav */
+.MIT-nav .MIT-menu-btn 
+{
+   border: 1px solid #404040;
+   border-radius: 3px;
+   box-shadow: 0 0 3px 0 rgba(0, 0, 0, .2);
+   display: none;
+   background: -ms-linear-gradient(top, #707070 0, #000 100%);
+   background: -moz-linear-gradient(top, #707070 0, #000 100%);
+   background: -o-linear-gradient(top, #707070 0, #000 100%);
+   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #707070), color-stop(1, #000));
+   background: -webkit-linear-gradient(top, #707070 0, #000 100%);
+   background: linear-gradient(to bottom, #707070 0, #000 100%);
+   margin: 3px;
+   padding: 5px;
+   position: relative;
+   width: 20px;
+}
+
+.MIT-nav .MIT-menu-btn span 
+{
+   background: #E0E0E0;
+   border-radius: 2px;
+   display: block;
+   height: 3px;
+   margin: 3px 1px;
+   position: relative;
+   -moz-transition: background .2s;
+   -o-transition: background .2s;
+   -webkit-transition: background .2s;
+   transition: background .2s;
+}
+
+.MIT-nav .MIT-menu-btn:hover span
+{
+   background: #f3f3f3;
+}
+
+.responsive .MIT-nav .MIT-menu-btn 
+{
+   display: inline-block;
+}
+
+.responsive nav.MIT-nav,
+.responsive .MIT-nav-inner
+{
+   width: auto !important;
+   position: relative !important;
+   top: auto !important;
+   left: auto !important;
+   right: auto !important;
+   bottom: auto !important;
+   margin-top: 0;
+   margin-bottom: 0;
+   min-width: 0;
+   text-align: left !important;
+}
+
+.responsive nav.MIT-nav
+{
+   min-width: 1%;
+}
+
+.responsive .MIT-nav 
+{
+   padding-left: 0;
+   padding-right: 0;
+}
+
+/* full width hmenu, instead of inline-block */
+.responsive .MIT-nav ul.MIT-hmenu 
+{
+   display: none;
+   float: none;
+   text-align: center;
+}
+
+.responsive .MIT-nav .MIT-hmenu.visible 
+{
+   display: block;
+}
+
+/* elements on different lines */
+.responsive .MIT-nav ul.MIT-hmenu li,
+.MIT-hmenu-extra1,
+.MIT-hmenu-extra2
+{
+   float: none;
+}
+  
+/* horizontal margins */
+.responsive .MIT-nav ul.MIT-hmenu>li:first-child, 
+.responsive .MIT-nav ul.MIT-hmenu>li:last-child, 
+.responsive .MIT-nav ul.MIT-hmenu>li
+{
+   margin-left: 0;
+   margin-right: 0;
+}
+ 
+/* separator */ 
+.responsive .MIT-nav ul.MIT-hmenu>li:before
+{
+   display: none;
+}
+
+/* vertical distance between items */
+.responsive .MIT-nav ul.MIT-hmenu a
+{
+   margin-top: 1px !important;
+   margin-bottom: 1px !important;
+   text-align: center !important;
+   height: auto;
+   white-space: normal;
+}
+
+.responsive .MIT-nav ul.MIT-hmenu>li:first-child>a
+{
+   margin-top: 0 !important;
+}
+
+.responsive .MIT-nav ul.MIT-hmenu>li:last-child>a
+{
+   margin-bottom: 0 !important;
+}
+
+/* fixes for extended menu */
+.responsive .MIT-nav .ext, 
+.responsive .MIT-nav ul.MIT-hmenu>li>ul, 
+.responsive .MIT-nav ul.MIT-hmenu>li>ul>li,
+.responsive .MIT-nav ul.MIT-hmenu>li>ul>li a
+{
+   width: auto !important;
+}
+
+/* submenu position on hover */
+.responsive .MIT-nav ul.MIT-hmenu ul
+{
+   left: auto !important;
+   right: auto !important;
+   top: auto !important;
+   bottom: auto !important;
+   display: none !important;
+   position: relative !important;
+   visibility: visible !important;
+}
+
+.responsive .MIT-nav ul.MIT-hmenu>li>ul>li:first-child:after 
+{
+   display: none;
+}
+.responsive .MIT-nav ul.MIT-hmenu ul a
+{
+   padding-left: 4% !important;
+}
+.responsive .MIT-nav ul.MIT-hmenu ul ul a
+{
+   padding-left: 6% !important;
+}
+.responsive .MIT-nav ul.MIT-hmenu ul ul ul a
+{
+   padding-left: 8% !important;
+}
+.responsive .MIT-nav ul.MIT-hmenu ul ul ul ul a
+{
+   padding-left: 10% !important;
+}
+.responsive .MIT-nav ul.MIT-hmenu ul ul ul ul ul a
+{
+   padding-left: 12% !important;
+}
+  
+.responsive .MIT-nav ul.MIT-hmenu>li>ul
+{
+   padding: 0;
+}
+  
+.responsive .MIT-nav ul.MIT-hmenu>li>ul:before
+{
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.responsive .MIT-content-layout, 
+.responsive .MIT-content-layout-row, 
+.responsive .MIT-layout-cell 
+{
+   display: block;
+}
+
+.responsive .MIT-layout-cell 
+{
+   width: auto !important;
+   height: auto !important;
+   border-right-width: 0 !important;
+   border-left-width: 0 !important;
+   border-radius: 0 !important;
+}
+
+.responsive .MIT-content-layout:after, 
+.responsive .MIT-content-layout-row:after, 
+.responsive .MIT-layout-cell:after 
+{
+   content: ".";
+   display: block;
+   height: 0;
+   clear: both;
+   visibility: hidden;
+}
+
+.responsive ul.MIT-vmenu>li>ul
+{
+   padding: 0;
+   display: none;
+}
+
+.responsive ul.MIT-vmenu>li>ul:before
+{
+   display: block;
+   position: absolute;
+   content: ' ';
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+}
+
+.responsive ul.MIT-vmenu>li>ul.vmenu-resp-popup-visible 
+{
+   display: block;
+}
+
+.responsive ul.MIT-vmenu ul {
+   position: relative;
+   left: auto;
+   top: auto;
+   visibility: visible;
+}
+
+.responsive ul.MIT-vmenu ul ul a 
+{
+   padding-left: 54px;
+}
+
+.responsive ul.MIT-vmenu ul ul ul a 
+{
+   padding-left: 81px;
+}
+
+.responsive ul.MIT-vmenu ul ul ul ul a 
+{
+   padding-left: 108px;
+}
+
+.responsive ul.MIT-vmenu ul ul ul ul ul a 
+{
+   padding-left: 135px;
+}
+
+.responsive .MIT-post
+{
+   border-radius: 0;
+}
+
+.responsive .MIT-footer-inner
+{
+   min-width: 0;
+}
+
+.responsive .responsive-tablet-layout-cell 
+{
+   width: 50% !important;
+   float: left;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+

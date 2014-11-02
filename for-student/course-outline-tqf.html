@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US"><head><!-- Created by Artisteer v4.1.0.59861 -->
+    <meta charset="utf-8">
+    <title>New Page</title>
+    <meta name="viewport" content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = no, width = device-width">
+
+    <!--[if lt IE 9]><script src="../https://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <link rel="stylesheet" href="../style.css" media="screen">
+    <!--[if lte IE 7]><link rel="stylesheet" href="../style.ie7.css" media="screen" /><![endif]-->
+    <link rel="stylesheet" href="../style.responsive.css" media="all">
+
+
+    <script src="../jquery.js"></script>
+    <script src="../script.js"></script>
+    <script src="../script.responsive.js"></script>
+
+<script>jQuery(function($) {
+    'use strict';
+    if ($.fn.slider) {
+        $(".MIT-slidecontainertimthumb1").each(function () {
+            var slideContainer = $(this), tmp;
+            var inner = $(".MIT-slider-inner", slideContainer);
+            var helper = null;
+
+            if ($.support.transition) {
+                helper = new BackgroundHelper();
+                helper.init("horizontal", "prev", $(".MIT-slide-item", inner).first().css($.support.transition.prefix + "transition-duration"));
+                inner.children().each(function () {
+                    helper.processSlide($(this));
+                });
+
+            }
+
+
+            inner.children().eq(0).addClass("active");
+            slideContainer.slider({
+                pause: 2600,
+                speed: 600,
+                repeat: true,
+                animation: "horizontal",
+                direction: "prev",
+                navigator: slideContainer.siblings(".MIT-slidenavigatortimthumb1"),
+                helper: helper                
+            });
+        });
+    }
+});
+</script><style>.MIT-slidecontainertimthumb1 {
+    position: relative;
+        width: 740px;
+    height: 365px;
+        }
+
+.MIT-slidecontainertimthumb1 .MIT-slide-item
+{
+
+}
+
+.MIT-slidecontainertimthumb1 .MIT-slide-item {
+    -webkit-transition: 600ms ease-in-out left;
+    -moz-transition: 600ms ease-in-out left;
+    -ms-transition: 600ms ease-in-out left;
+    -o-transition: 600ms ease-in-out left;
+    transition: 600ms ease-in-out left;
+    position: relative;
+    display: none;
+    width:  100%;
+    height: 100%;
+}
+
+.MIT-slidecontainertimthumb1 .active, .MIT-slidecontainertimthumb1 .next, .MIT-slidecontainertimthumb1 .prev {
+    display: block;
+}
+
+.MIT-slidecontainertimthumb1 .active {
+    left: 0;
+}
+
+.MIT-slidecontainertimthumb1 .next, .MIT-slidecontainertimthumb1 .prev {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.MIT-slidecontainertimthumb1 .next {
+    left: 100%;
+}
+
+.MIT-slidecontainertimthumb1 .prev {
+    left: -100%;
+}
+
+.MIT-slidecontainertimthumb1 .next.forward, .MIT-slidecontainertimthumb1 .prev.back {
+    left: 0;
+}
+
+.MIT-slidecontainertimthumb1 .active.forward {
+    left: -100%;
+}
+
+.MIT-slidecontainertimthumb1 .active.back {
+    left: 100%;
+}
+
+
+
+
+.MIT-slidetimthumb10 {
+    background-image:  url('../images/slidetimthumb10.png');
+        background-size:  100%;
+        background-position:  center top;
+    background-repeat: no-repeat;
+}
+.MIT-slidetimthumb11 {
+    background-image:  url('../images/slidetimthumb11.png');
+        background-size:  100%;
+        background-position:  center top;
+    background-repeat: no-repeat;
+}
+.MIT-slidetimthumb12 {
+    background-image:  url('../images/slidetimthumb12.png');
+        background-size:  100%;
+        background-position:  center top;
+    background-repeat: no-repeat;
+}
+.MIT-slidetimthumb13 {
+    background-image:  url('../images/slidetimthumb13.png');
+        background-size:  100%;
+        background-position:  center top;
+    background-repeat: no-repeat;
+}
+.MIT-slidetimthumb14 {
+    background-image:  url('../images/slidetimthumb14.png');
+        background-size:  100%;
+        background-position:  center top;
+    background-repeat: no-repeat;
+}
+
+
+.MIT-slidenavigatortimthumb1 {
+  display: inline-block;
+  position: absolute;
+  direction: ltr !important;
+  top: 341px;
+  left: 85.95%;
+  z-index: 101;
+  line-height: 0 !important;
+  -webkit-background-origin: border !important;
+  -moz-background-origin: border !important;
+  background-origin: border-box !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+    white-space: nowrap;
+    }
+.MIT-slidenavigatortimthumb1
+{
+background: #B9C2CB;background: linear-gradient(top, rgba(223, 227, 231, 0.6) 0, rgba(111, 130, 149, 0.6) 100%) no-repeat;background: -webkit-linear-gradient(top, rgba(223, 227, 231, 0.6) 0, rgba(111, 130, 149, 0.6) 100%) no-repeat;background: -moz-linear-gradient(top, rgba(223, 227, 231, 0.6) 0, rgba(111, 130, 149, 0.6) 100%) no-repeat;background: -o-linear-gradient(top, rgba(223, 227, 231, 0.6) 0, rgba(111, 130, 149, 0.6) 100%) no-repeat;background: -ms-linear-gradient(top, rgba(223, 227, 231, 0.6) 0, rgba(111, 130, 149, 0.6) 100%) no-repeat;background: linear-gradient(top, rgba(223, 227, 231, 0.6) 0, rgba(111, 130, 149, 0.6) 100%) no-repeat;-svg-background: linear-gradient(top, rgba(223, 227, 231, 0.6) 0, rgba(111, 130, 149, 0.6) 100%) no-repeat;
+-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;
+
+
+padding:7px;
+
+
+
+
+
+}
+.MIT-slidenavigatortimthumb1 > a
+{
+background: #728597;background: #728597;background: #728597;background: #728597;background: #728597;background: #728597;background: #728597;-svg-background: #728597;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.MIT-slidenavigatortimthumb1 > a.active
+{
+background: #FA681E;background: #FA681E;background: #FA681E;background: #FA681E;background: #FA681E;background: #FA681E;background: #FA681E;-svg-background: #FA681E;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+.MIT-slidenavigatortimthumb1 > a:hover
+{
+background: #455B73;background: #455B73;background: #455B73;background: #455B73;background: #455B73;background: #455B73;background: #455B73;-svg-background: #455B73;
+-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;
+
+
+
+margin:0 10px 0 0;
+
+width: 10px;
+
+height: 10px;
+}
+
+</style>
+
+</head>
+<body>
+<div id="MIT-main">
+    <div class="MIT-sheet clearfix">
+<header class="MIT-header">
+
+
+    <div class="MIT-shapes">
+<div class="MIT-object1908067680" data-left="100%"></div>
+
+            </div>
+
+
+
+<div class="MIT-textblock MIT-object1599416546" data-left="98.66%">
+    <form class="MIT-search" name="Search" action="javascript:void(0)">
+    <input type="text" value="">
+        <input type="submit" value="" name="search" class="MIT-search-button">
+        </form>
+</div>
+                <div id="MIT-flash-area">
+                    <div id="MIT-flash-container">
+                    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1727" height="431" id="MIT-flash-object">
+                        <param name="movie" value="../images/flash.swf">
+                        <param name="quality" value="high">
+                    	<param name="scale" value="exactfit">
+                    	<param name="wmode" value="transparent">
+                    	<param name="flashvars" value="color1=0xFFFFFF&amp;alpha1=.50&amp;framerate1=24&amp;loop=true&amp;wmode=transparent">
+                        <param name="swfliveconnect" value="true">
+                        <!--[if !IE]>-->
+                        <object type="application/x-shockwave-flash" data="../images/flash.swf" width="1727" height="431">
+                            <param name="quality" value="high">
+                    	    <param name="scale" value="exactfit">
+                            <param name="wmode" value="transparent">
+                                                    	    <param name="flashvars" value="color1=0xFFFFFF&amp;alpha1=.50&amp;framerate1=24&amp;loop=true&amp;wmode=transparent">
+                            <param name="swfliveconnect" value="true">
+                        <!--<![endif]-->
+                          	<div class="MIT-flash-alt"><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player"></a></div>
+                        <!--[if !IE]>-->
+                        </object>
+                        <!--<![endif]-->
+                    </object>
+                    </div>
+                    </div>
+                    
+</header>
+<nav class="MIT-nav">
+    <ul class="MIT-hmenu"><li><a href="../home.html" class="">Home</a></li><li><a href="../for-visitor.html" class="">For VISITOR</a><ul class=""><li><a href="../for-visitor/study-programs.html" class="">Study Programs</a></li><li><a href="../for-visitor/news-activities.html" class="">News &amp; Activities</a><ul class=""><li><a href="../for-visitor/news-activities/international-relations-activity.html" class="">International Relations Activity</a></li><li><a href="../for-visitor/news-activities/photo-gallery.html" class="">Photo Gallery</a></li><li><a href="../for-visitor/news-activities/video-gallery.html" class="">Video Gallery</a></li></ul></li><li><a href="../for-visitor/showcase-award.html" class="">Showcase &amp; Award</a></li><li><a href="../for-visitor/research.html" class="">Research</a></li><li><a href="../for-visitor/personnel.html" class="">Personnel</a><ul class=""><li><a href="../for-visitor/personnel/committee.html" class="">Committee</a></li><li><a href="../for-visitor/personnel/lecturers.html" class="">Lecturers</a></li><li><a href="../for-visitor/personnel/officers.html" class="">Officers</a></li></ul></li><li><a href="../for-visitor/about-us.html" class="">About us</a><ul class=""><li><a href="../for-visitor/about-us/history.html" class="">History</a></li><li><a href="../for-visitor/about-us/organization.html" class="">Organization</a></li><li><a href="../for-visitor/about-us/address-and-map.html" class="">Address And Map</a></li></ul></li></ul></li><li><a href="../for-student.html" class="active">For STUDENT</a><ul class="active"><li><a href="../for-student/news-and-announcements.html" class="">News and Announcements</a><ul class=""><li><a href="../for-student/news-and-announcements/academic-announcements.html" class="">Academic Announcements</a></li><li><a href="../for-student/news-and-announcements/activity-news.html" class="">Activity News</a></li><li><a href="../for-student/news-and-announcements/scholarship-news.html" class="">Scholarship News</a></li><li><a href="../for-student/news-and-announcements/job-news.html" class="">Job News</a></li></ul></li><li><a href="../for-student/education-plan.html" class="">Education Plan</a></li><li><a href="../for-student/course-outline-tqf.html" class="active">Course Outline (TQF)</a></li><li><a href="../for-student/rules-regulations.html">Rules &amp; Regulations</a></li><li><a href="../for-student/education-calendar.html">Education calendar</a></li><li><a href="../for-student/education-forms.html">Education forms</a><ul><li><a href="../for-student/education-forms/general-request-forms.html">General request forms</a></li><li><a href="../for-student/education-forms/thesisminor-thesis-proposal-forms.html">Thesis/Minor Thesis proposal forms</a></li></ul></li></ul></li><li><a href="../infrastructure-services.html">Infrastructure Services</a><ul><li><a href="../infrastructure-services/student-click-links.html">Student Click Links</a><ul><li><a href="../infrastructure-services/student-click-links/lms.html">LMS</a></li><li><a href="../infrastructure-services/student-click-links/student-email.html">Student Email</a></li><li><a href="../infrastructure-services/student-click-links/grade-check.html">Grade Check</a></li><li><a href="../infrastructure-services/student-click-links/online-regestration.html">Online Regestration</a></li><li><a href="../infrastructure-services/student-click-links/print-quota.html">Print Quota</a></li><li><a href="../infrastructure-services/student-click-links/volume-licensing-service-center.html">Volume Licensing Service Center</a></li><li><a href="../infrastructure-services/student-click-links/ยนแบบวทยานพนธสารนพนธ-ออนไลน.html">ยื่นแบบวิทยานิพนธ์/สารนิพนธ์ ออนไลน์</a></li><li><a href="../infrastructure-services/student-click-links/แจงสำเรจการศกษา.html">แจ้งสำเร็จการศึกษา</a></li></ul></li></ul></li><li><a href="../for-alumni.html">For ALUMNI</a></li></ul> 
+    </nav>
+<div class="MIT-layout-wrapper">
+                <div class="MIT-content-layout">
+                    <div class="MIT-content-layout-row">
+                        <div class="MIT-layout-cell MIT-content"><div class="MIT-block clearfix">
+        <div class="MIT-blockheader">
+            <h3 class="t">ข่าว</h3>
+        </div>
+        <div class="MIT-blockcontent"><p></p><div id="timthumb1" style="position: relative; display: inline-block; z-index: 0; margin: 0px;  border-width: 0px;  " class="MIT-collage">
+<div class="MIT-slider MIT-slidecontainertimthumb1" data-width="740" data-height="365">
+    <div class="MIT-slider-inner">
+<div class="MIT-slide-item MIT-slidetimthumb10">
+
+</div>
+<div class="MIT-slide-item MIT-slidetimthumb11">
+
+</div>
+<div class="MIT-slide-item MIT-slidetimthumb12">
+
+</div>
+<div class="MIT-slide-item MIT-slidetimthumb13">
+
+</div>
+<div class="MIT-slide-item MIT-slidetimthumb14">
+
+</div>
+
+    </div>
+</div>
+<div class="MIT-slidenavigator MIT-slidenavigatortimthumb1" data-left="85.95">
+<a href="#" class="MIT-slidenavigatoritem"></a><a href="#" class="MIT-slidenavigatoritem"></a><a href="#" class="MIT-slidenavigatoritem"></a><a href="#" class="MIT-slidenavigatoritem"></a><a href="#" class="MIT-slidenavigatoritem"></a>
+</div>
+
+
+
+    </div>
+</div>
+</div><article class="MIT-post MIT-article">
+                                <h2 class="MIT-postheader"><span class="MIT-postheadericon">New Page</span></h2>
+                                                
+                <div class="MIT-postcontent MIT-postcontent-0 clearfix"><p><br/></p></div>
+                                
+                
+
+</article></div>
+                        <div class="MIT-layout-cell MIT-sidebar1"><div class="MIT-block clearfix">
+        <div class="MIT-blockheader">
+            <h3 class="t">Quick Access</h3>
+        </div>
+        <div class="MIT-blockcontent"><p><img width="229" height="53" alt="" class="MIT-lightbox" src="../images/substances.jpg"><br></p><p><img width="229" height="53" alt="" class="MIT-lightbox" src="../images/souvenir.jpg"><br></p><p><img width="229" height="53" alt="" class="MIT-lightbox" src="../images/hotline-dean.jpg"></p></div>
+</div><div class="MIT-block clearfix">
+        <div class="MIT-blockheader">
+            <h3 class="t">Social Network</h3>
+        </div>
+        <div class="MIT-blockcontent"><p>&nbsp;<a href="" class="MIT-facebook-tag-icon"></a>&nbsp;&nbsp;&nbsp;<a href="" class="MIT-rss-tag-icon" style="line-height: 34px;"></a>&nbsp;&nbsp;&nbsp;<a href="" class="MIT-twitter-tag-icon"></a>&nbsp;<br></p></div>
+</div><div class="MIT-vmenublock clearfix">
+        <div class="MIT-vmenublockheader">
+            <h3 class="t">เกี่ยวกับ MIT</h3>
+        </div>
+        <div class="MIT-vmenublockcontent">
+<ul class="MIT-vmenu"><li><a href="../home.html" class="">Home</a></li><li><a href="../for-visitor.html" class="">For VISITOR</a><ul class=""><li><a href="../for-visitor/study-programs.html" class="">Study Programs</a></li><li><a href="../for-visitor/news-activities.html" class="">News &amp; Activities</a><ul class=""><li><a href="../for-visitor/news-activities/international-relations-activity.html" class="">International Relations Activity</a></li><li><a href="../for-visitor/news-activities/photo-gallery.html" class="">Photo Gallery</a></li><li><a href="../for-visitor/news-activities/video-gallery.html" class="">Video Gallery</a></li></ul></li><li><a href="../for-visitor/showcase-award.html" class="">Showcase &amp; Award</a></li><li><a href="../for-visitor/research.html" class="">Research</a></li><li><a href="../for-visitor/personnel.html" class="">Personnel</a><ul class=""><li><a href="../for-visitor/personnel/committee.html" class="">Committee</a></li><li><a href="../for-visitor/personnel/lecturers.html" class="">Lecturers</a></li><li><a href="../for-visitor/personnel/officers.html" class="">Officers</a></li></ul></li><li><a href="../for-visitor/about-us.html" class="">About us</a><ul class=""><li><a href="../for-visitor/about-us/history.html" class="">History</a></li><li><a href="../for-visitor/about-us/organization.html" class="">Organization</a></li><li><a href="../for-visitor/about-us/address-and-map.html" class="">Address And Map</a></li></ul></li></ul></li><li><a href="../for-student.html" class="active">For STUDENT</a><ul class="active"><li><a href="../for-student/news-and-announcements.html" class="">News and Announcements</a><ul class=""><li><a href="../for-student/news-and-announcements/academic-announcements.html" class="">Academic Announcements</a></li><li><a href="../for-student/news-and-announcements/activity-news.html" class="">Activity News</a></li><li><a href="../for-student/news-and-announcements/scholarship-news.html" class="">Scholarship News</a></li><li><a href="../for-student/news-and-announcements/job-news.html" class="">Job News</a></li></ul></li><li><a href="../for-student/education-plan.html" class="">Education Plan</a></li><li><a href="../for-student/course-outline-tqf.html" class="active">Course Outline (TQF)</a></li><li><a href="../for-student/rules-regulations.html">Rules &amp; Regulations</a></li><li><a href="../for-student/education-calendar.html">Education calendar</a></li><li><a href="../for-student/education-forms.html">Education forms</a><ul><li><a href="../for-student/education-forms/general-request-forms.html">General request forms</a></li><li><a href="../for-student/education-forms/thesisminor-thesis-proposal-forms.html">Thesis/Minor Thesis proposal forms</a></li></ul></li></ul></li><li><a href="../infrastructure-services.html">Infrastructure Services</a><ul><li><a href="../infrastructure-services/student-click-links.html">Student Click Links</a><ul><li><a href="../infrastructure-services/student-click-links/lms.html">LMS</a></li><li><a href="../infrastructure-services/student-click-links/student-email.html">Student Email</a></li><li><a href="../infrastructure-services/student-click-links/grade-check.html">Grade Check</a></li><li><a href="../infrastructure-services/student-click-links/online-regestration.html">Online Regestration</a></li><li><a href="../infrastructure-services/student-click-links/print-quota.html">Print Quota</a></li><li><a href="../infrastructure-services/student-click-links/volume-licensing-service-center.html">Volume Licensing Service Center</a></li><li><a href="../infrastructure-services/student-click-links/ยนแบบวทยานพนธสารนพนธ-ออนไลน.html">ยื่นแบบวิทยานิพนธ์/สารนิพนธ์ ออนไลน์</a></li><li><a href="../infrastructure-services/student-click-links/แจงสำเรจการศกษา.html">แจ้งสำเร็จการศึกษา</a></li></ul></li></ul></li><li><a href="../for-alumni.html">For ALUMNI</a></li></ul>
+                
+        </div>
+</div></div>
+                    </div>
+                </div>
+            </div><footer class="MIT-footer">
+<p><br></p><p><a href="#">Link1</a> | <a href="#">Link2</a> | <a href="#">Link3</a></p>
+<p>&nbsp;Copyright © 2014. All Rights Reserved.</p><p><br></p>
+</footer>
+
+    </div>
+    <p class="MIT-page-footer">
+        <span id="MIT-footnote-links"><a href="http://www.artisteer.com/" target="_blank">Web Template</a> created with Artisteer.</span>
+    </p>
+</div>
+
+
+</body></html>
