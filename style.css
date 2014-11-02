@@ -1,4 +1,4 @@
-
+/* Created by Artisteer v4.1.0.59861 */
 
 #MIT-main
 {
@@ -440,7 +440,7 @@ li p, .MIT-postcontent li p, .MIT-blockcontent li p
    cursor:auto;
    width: 90%;
    min-width: 700px;
-   max-width: 1728px;
+   max-width: 1030px;
    z-index: auto !important;
 }
 
@@ -479,10 +479,10 @@ li p, .MIT-postcontent li p, .MIT-blockcontent li p
 
 #MIT-flash-container
 {
-   height: 431px;
-   top: -140px;
+   height: 257px;
+   top: -53px;
    position: absolute;
-   width: 1727px;
+   width: 1030px;
    left: 0;
 }
 
@@ -492,7 +492,7 @@ li p, .MIT-postcontent li p, .MIT-blockcontent li p
    width: 110px;
    height: 30px;
    margin: 0 auto;
-   top: 140px;
+   top: 53px;
 }
 
 .MIT-nav
